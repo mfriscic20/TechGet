@@ -41,9 +41,9 @@ namespace TechGet
                 
                 if (LoggedEmployee != null && LoggedEmployee.CheckPassword(txtPassword.Text))
                 {
-                    FrmProcurations frmProcurations = new FrmProcurations();
+                    FrmInput frmInput = new FrmInput();
                     Hide();
-                    frmProcurations.ShowDialog();
+                    frmInput.ShowDialog();
                     Close();
                 }
                 else

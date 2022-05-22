@@ -64,6 +64,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnEvaluate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -381,19 +382,30 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(473, 873);
+            this.button1.Location = new System.Drawing.Point(414, 873);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(179, 68);
             this.button1.TabIndex = 35;
             this.button1.Text = "PODNESI ZAHTJEV";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // btnEvaluate
+            // 
+            this.btnEvaluate.Location = new System.Drawing.Point(707, 873);
+            this.btnEvaluate.Name = "btnEvaluate";
+            this.btnEvaluate.Size = new System.Drawing.Size(158, 68);
+            this.btnEvaluate.TabIndex = 36;
+            this.btnEvaluate.Text = "PRIKAŽI NABAVE";
+            this.btnEvaluate.UseVisualStyleBackColor = true;
+            this.btnEvaluate.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // FrmInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(1185, 953);
+            this.Controls.Add(this.btnEvaluate);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
@@ -430,7 +442,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FrmInput";
             this.Text = "Zahtjev za pripremu i početak nabave";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -476,6 +488,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEvaluate;
     }
 }
 

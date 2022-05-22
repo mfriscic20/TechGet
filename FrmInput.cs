@@ -51,5 +51,15 @@ namespace TechGet
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            FrmProcurations frmProcurations = new FrmProcurations();
+            Hide();
+            frmProcurations.ShowDialog();
+            Close();
+
+        }
     }
 }
