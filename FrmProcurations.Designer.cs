@@ -37,14 +37,14 @@
             this.dgvProcurations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProcurations.Location = new System.Drawing.Point(2, 1);
             this.dgvProcurations.Name = "dgvProcurations";
-            this.dgvProcurations.Size = new System.Drawing.Size(735, 409);
+            this.dgvProcurations.Size = new System.Drawing.Size(1829, 677);
             this.dgvProcurations.TabIndex = 0;
             // 
             // FrmProcurations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1824, 674);
             this.Controls.Add(this.dgvProcurations);
             this.Name = "FrmProcurations";
             this.Text = "FrmProcurations";
