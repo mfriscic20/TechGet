@@ -1,6 +1,6 @@
 ﻿namespace TechGet
 {
-    partial class Form1
+    partial class FrmInput
     {
         /// <summary>
         /// Required designer variable.

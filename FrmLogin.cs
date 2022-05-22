@@ -26,7 +26,7 @@ namespace TechGet
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
-            LoggedEmployee = PersonRepository.GetPerson(txtUsername.Text); // sa strelicama biras koju oces od overloadanih, u ovom txt je korisnicko ime nas
+            LoggedEmployee = PersonRepository.GetPerson(txtUsername.Text);
 
             if (txtUsername.Text == "")
             {
@@ -38,12 +38,12 @@ namespace TechGet
             }
             else
             {
-                // if (txtUsername.Text == username && txtPassword.Text == password)
-                if (LoggedEmployee != null & LoggedEmployee.CheckPassword(txtPassword.Text))
+                
+                if (LoggedEmployee != null && LoggedEmployee.CheckPassword(txtPassword.Text))
                 {
-                    Form1 frmEmployees = new Form1();
+                    FrmProcurations frmProcurations = new FrmProcurations();
                     Hide();
-                    frmEmployees.ShowDialog();
+                    frmProcurations.ShowDialog();
                     Close();
                 }
                 else

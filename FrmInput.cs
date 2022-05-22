@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TechGet
 {
-    public partial class Form1 : Form
+    public partial class FrmInput : Form
     {
-        public Form1()
+        public FrmInput()
         {
             InitializeComponent();
         }
