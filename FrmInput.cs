@@ -7,19 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TechGet.Models;
+using TechGet.Repositories;
 
 namespace TechGet
 {
     public partial class FrmInput : Form
     {
-        public FrmInput()
+
+       
+        public FrmInput() 
         {
             InitializeComponent();
+            //fundingSource=selectedSource;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
+            List<FundingSource> fundingSources = FundingSourceRepository.GetFundingSources();
+            cboFundingSources.DataSource = fundingSources;
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -62,9 +70,16 @@ namespace TechGet
 
         }
 
+      
+
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cboFundingSources_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FundingSource currentSource= cboFundingSources.SelectedItem as FundingSource;
         }
     }
 }

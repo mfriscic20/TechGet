@@ -47,7 +47,7 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboFundingSources = new System.Windows.Forms.ComboBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -226,14 +226,15 @@
             this.label12.TabIndex = 22;
             this.label12.Text = "IZVOR FINANCIRANJA";
             // 
-            // comboBox1
+            // cboFundingSources
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(141, 505);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(153, 21);
-            this.comboBox1.TabIndex = 23;
+            this.cboFundingSources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
+            this.cboFundingSources.FormattingEnabled = true;
+            this.cboFundingSources.Location = new System.Drawing.Point(141, 505);
+            this.cboFundingSources.Name = "cboFundingSources";
+            this.cboFundingSources.Size = new System.Drawing.Size(236, 21);
+            this.cboFundingSources.TabIndex = 23;
+            this.cboFundingSources.SelectedIndexChanged += new System.EventHandler(this.cboFundingSources_SelectedIndexChanged);
             // 
             // textBox12
             // 
@@ -337,7 +338,7 @@
             // 
             this.btnEvaluate.Location = new System.Drawing.Point(709, 825);
             this.btnEvaluate.Name = "btnEvaluate";
-            this.btnEvaluate.Size = new System.Drawing.Size(158, 68);
+            this.btnEvaluate.Size = new System.Drawing.Size(160, 68);
             this.btnEvaluate.TabIndex = 36;
             this.btnEvaluate.Text = "PRIKAŽI NABAVE";
             this.btnEvaluate.UseVisualStyleBackColor = true;
@@ -360,7 +361,7 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboFundingSources);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.label8);
@@ -409,7 +410,7 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboFundingSources;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox13;

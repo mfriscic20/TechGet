@@ -47,7 +47,7 @@
             this.ClientSize = new System.Drawing.Size(1824, 674);
             this.Controls.Add(this.dgvProcurations);
             this.Name = "FrmProcurations";
-            this.Text = "FrmProcurations";
+            this.Text = "Prikaz nabava";
             this.Load += new System.EventHandler(this.FrmProcurations_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcurations)).EndInit();
             this.ResumeLayout(false);
