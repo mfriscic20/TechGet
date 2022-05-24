@@ -98,6 +98,31 @@ namespace TechGet.Repositories
 
             return procuration;
         }
+
+        
+
+        public static void InsertEvaluation( Procuration procuration)
+        {
+            string sql=$"INSERT INTO Nabave (Id, FinanciranjeId, Realizirano, Datum, ZaposlenikId, Klasa, Ur_broj, Opis_predmeta_nabave," +
+                $"p1_ponuditelj, p1_cijena, p1_odabrano, p2_ponuditelj, p2_cijena, p2_odabrano, Br_projekta, Naziv_projekta, Dodatna_pojasnjenja) " +
+                $"VALUES ({procuration.Id}, {procuration.Id}, {procuration.Realizirano}, {procuration.Datum}, {procuration.FinanciranjeId}, {procuration.klasa}, {procuration.ur_broj}, " +
+                $"{procuration.Opis_predmeta_nabave},{procuration.p1_ponuditelj}, {procuration.p1_cijena}, {procuration.p1_odabrano}," +
+                $"{procuration.p2_ponuditelj}, {procuration.p2_cijena}, {procuration.p2_odabrano}, {procuration.br_projekta}, {procuration.naziv_projekta}," +
+                $"{procuration.dodatna_pojasnjenja})";
+                DB.OpenConnection();
+                DB.ExecuteCommand(sql);
+                DB.CloseConnection();
+            //tu bi mi se nekak moralo autoinkrement Id
+
+        }
+
+        public static void UpdateEvaluation(Procuration procuration, Person person)
+        {
+            string sql = $"UPDATE Nabave SET ZaposlenikId={person.Id}"; //doradi ovaj upit dok skuzis insert
+                 DB.OpenConnection();
+                 DB.ExecuteCommand(sql);
+                 DB.CloseConnection();
+        }
     }
 }
 

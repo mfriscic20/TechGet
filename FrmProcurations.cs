@@ -33,6 +33,19 @@ namespace TechGet
             dgvProcurations.Columns["Realizirano"].DisplayIndex = 2;
             dgvProcurations.Columns["Datum"].DisplayIndex = 3;
             dgvProcurations.Columns["ZaposlenikId"].DisplayIndex = 4; //koji stupac je za kaj
+            dgvProcurations.Columns["Klasa"].DisplayIndex = 5;
+            dgvProcurations.Columns["Ur_broj"].DisplayIndex = 6;
+            dgvProcurations.Columns["Opis_predmeta_nabave"].DisplayIndex = 7;
+            dgvProcurations.Columns["p1_ponuditelj"].DisplayIndex = 8;
+            dgvProcurations.Columns["p1_cijena"].DisplayIndex = 9;
+            dgvProcurations.Columns["p1_odabrano"].DisplayIndex = 10;
+            dgvProcurations.Columns["p2_ponuditelj"].DisplayIndex = 11;
+            dgvProcurations.Columns["p2_cijena"].DisplayIndex = 12;
+            dgvProcurations.Columns["p2_odabrano"].DisplayIndex = 13;
+            dgvProcurations.Columns["Br_projekta"].DisplayIndex = 14;
+            dgvProcurations.Columns["Naziv_projekta"].DisplayIndex = 15;
+            dgvProcurations.Columns["Dodatna_pojasnjenja"].DisplayIndex = 16;
+
 
         }
     }

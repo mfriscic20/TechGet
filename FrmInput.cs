@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DBLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -80,6 +81,30 @@ namespace TechGet
         private void cboFundingSources_SelectedIndexChanged(object sender, EventArgs e)
         {
             FundingSource currentSource= cboFundingSources.SelectedItem as FundingSource;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int ur_broj = int.Parse(txtUrBroj.Text);
+            int klasa=int.Parse(txtKlasa.Text);
+            //string opis_predmeta_nabave = int.Parse(txtOpisPredmetaNabave).ToString();
+            int br_projekta = int.Parse(txtBrojProjekta.Text);
+            int p1_odabrano = int.Parse(txtPonuda1Odabrano.Text);
+            int p2_odabrano = int.Parse(txtPonuda2Odabrano.Text);
+            //realizirano se ne popunjava na formi, deni da smije biti null
+
+
+
+
+            //tak za sve
+
+            Procuration nova_nabava = new Procuration();
+            nova_nabava.ur_broj= ur_broj;
+            //this.zaposlenik isti način ko na vježbama
+            //svojstva preimenuj da pocnu velikim slovom
+
+            
+                ProcurationRepository.InsertEvaluation(nova_nabava);
         }
     }
 }
