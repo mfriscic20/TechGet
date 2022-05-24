@@ -167,5 +167,13 @@ namespace TechGet
         {
 
         }
+
+        private void bntUrediNabavu_Click(object sender, EventArgs e)
+        {
+            FrmUpdate frmUpdates = new FrmUpdate();
+            Hide();
+            frmUpdates.ShowDialog();
+            Close();
+        }
     }
 }

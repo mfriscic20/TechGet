@@ -63,6 +63,7 @@
             this.txtDatum1 = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.bntUrediNabavu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -331,7 +332,7 @@
             // 
             // btnPodnesiZahtjev
             // 
-            this.btnPodnesiZahtjev.Location = new System.Drawing.Point(352, 584);
+            this.btnPodnesiZahtjev.Location = new System.Drawing.Point(271, 584);
             this.btnPodnesiZahtjev.Name = "btnPodnesiZahtjev";
             this.btnPodnesiZahtjev.Size = new System.Drawing.Size(179, 68);
             this.btnPodnesiZahtjev.TabIndex = 35;
@@ -342,7 +343,7 @@
             // btnEvaluate
             // 
             this.btnEvaluate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEvaluate.Location = new System.Drawing.Point(645, 584);
+            this.btnEvaluate.Location = new System.Drawing.Point(560, 584);
             this.btnEvaluate.Name = "btnEvaluate";
             this.btnEvaluate.Size = new System.Drawing.Size(160, 68);
             this.btnEvaluate.TabIndex = 36;
@@ -388,12 +389,23 @@
             this.label7.Text = "ID:";
             this.label7.Click += new System.EventHandler(this.label7_Click_1);
             // 
+            // bntUrediNabavu
+            // 
+            this.bntUrediNabavu.Location = new System.Drawing.Point(827, 584);
+            this.bntUrediNabavu.Name = "bntUrediNabavu";
+            this.bntUrediNabavu.Size = new System.Drawing.Size(160, 68);
+            this.bntUrediNabavu.TabIndex = 41;
+            this.bntUrediNabavu.Text = "UREDI NABAVU";
+            this.bntUrediNabavu.UseVisualStyleBackColor = true;
+            this.bntUrediNabavu.Click += new System.EventHandler(this.bntUrediNabavu_Click);
+            // 
             // FrmInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(1185, 659);
+            this.Controls.Add(this.bntUrediNabavu);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtDatum1);
@@ -474,6 +486,7 @@
         private System.Windows.Forms.TextBox txtDatum1;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button bntUrediNabavu;
     }
 }
 

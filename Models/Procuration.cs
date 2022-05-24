@@ -43,6 +43,11 @@ namespace TechGet.Models
 
         public string dodatna_pojasnjenja { get; set; }
 
+        public override string ToString()
+        {
+            return Id.ToString();
+        }
+
 
     }
 }
