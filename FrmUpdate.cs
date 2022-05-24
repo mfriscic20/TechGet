@@ -15,6 +15,7 @@ namespace TechGet
 {
     public partial class FrmUpdate : Form
     {
+        public static List<Procuration> nabava { get; set; }
         public FrmUpdate()
         {
             InitializeComponent();
@@ -22,11 +23,19 @@ namespace TechGet
 
         private void FrmUpdate_Load(object sender, EventArgs e)
         {
-            var nabava=ProcurationRepository.GetProcurations();
+
+            
+        nabava=ProcurationRepository.GetProcurations();
             cboOdaberiNabavu.DataSource = nabava;
             dgvAzurirajNabavu.DataSource = nabava;
 
             
+        }
+
+        private void cboOdaberiNabavu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Procuration selected = nabava[cboOdaberiNabavu.SelectedIndex];
+            txtIdAzuriranje.Text = selected.Opis_predmeta_nabave;
         }
     }
 }
