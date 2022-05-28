@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAzuriraj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAzuriraj.Designer.cs">
+      <DependentUpon>FrmAzuriraj.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInput.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,11 +74,11 @@
     <Compile Include="FrmProcurations.Designer.cs">
       <DependentUpon>FrmProcurations.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUpdate.cs">
+    <Compile Include="FrmUpdateDelete.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUpdate.Designer.cs">
-      <DependentUpon>FrmUpdate.cs</DependentUpon>
+    <Compile Include="FrmUpdateDelete.Designer.cs">
+      <DependentUpon>FrmUpdateDelete.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\FundingSource.cs" />
@@ -83,6 +89,9 @@
     <Compile Include="Repositories\FundingSourceRepository.cs" />
     <Compile Include="Repositories\PersonRepository.cs" />
     <Compile Include="Repositories\ProcurationRepository.cs" />
+    <EmbeddedResource Include="FrmAzuriraj.resx">
+      <DependentUpon>FrmAzuriraj.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmInput.resx">
       <DependentUpon>FrmInput.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -93,8 +102,8 @@
     <EmbeddedResource Include="FrmProcurations.resx">
       <DependentUpon>FrmProcurations.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUpdate.resx">
-      <DependentUpon>FrmUpdate.cs</DependentUpon>
+    <EmbeddedResource Include="FrmUpdateDelete.resx">
+      <DependentUpon>FrmUpdateDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

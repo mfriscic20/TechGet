@@ -120,12 +120,24 @@ namespace TechGet.Repositories
 
         }
 
-        public static void UpdateProcuration(Procuration procuration, Person person)
+        public static void UpdateProcuration(Procuration procuration, int ur_broj)
         {
-            string sql = $"UPDATE Nabave SET ZaposlenikId={person.Id}"; //doradi ovaj upit dok skuzis insert
+            string sql = $"UPDATE Nabave SET Ur_broj={ur_broj} WHERE Id='{procuration.Id}'"; //doradi ovaj upit dok skuzis insert
+
+                 DB.SetConfiguration("mfriscic20_DB", "mfriscic20", "'3;Y!xv0?'");
                  DB.OpenConnection();
                  DB.ExecuteCommand(sql);
                  DB.CloseConnection();
+        }
+
+        public static void DeleteProcuration(Procuration procuration)
+        {
+
+            string sql = $"DELETE FROM Nabave WHERE Id='{procuration.Id}'";
+            DB.SetConfiguration("mfriscic20_DB", "mfriscic20", "'3;Y!xv0?'");
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
         }
     }
 }

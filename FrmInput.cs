@@ -196,7 +196,7 @@ namespace TechGet
 
         private void bntUrediNabavu_Click(object sender, EventArgs e)
         {
-            FrmUpdate frmUpdates = new FrmUpdate();
+            FrmUpdateDelete frmUpdates = new FrmUpdateDelete();
             Hide();
             frmUpdates.ShowDialog();
             Close();
