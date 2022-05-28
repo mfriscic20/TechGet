@@ -61,15 +61,13 @@
             this.btnEvaluate = new System.Windows.Forms.Button();
             this.txtDatum = new System.Windows.Forms.Label();
             this.txtDatum1 = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.bntUrediNabavu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(276, 12);
+            this.label1.Location = new System.Drawing.Point(14, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 0;
@@ -78,7 +76,7 @@
             // txtKlasa
             // 
             this.txtKlasa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
-            this.txtKlasa.Location = new System.Drawing.Point(403, 12);
+            this.txtKlasa.Location = new System.Drawing.Point(141, 12);
             this.txtKlasa.Name = "txtKlasa";
             this.txtKlasa.Size = new System.Drawing.Size(100, 20);
             this.txtKlasa.TabIndex = 1;
@@ -244,7 +242,7 @@
             // txtBrojProjekta
             // 
             this.txtBrojProjekta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
-            this.txtBrojProjekta.Location = new System.Drawing.Point(769, 12);
+            this.txtBrojProjekta.Location = new System.Drawing.Point(507, 12);
             this.txtBrojProjekta.Name = "txtBrojProjekta";
             this.txtBrojProjekta.Size = new System.Drawing.Size(100, 20);
             this.txtBrojProjekta.TabIndex = 24;
@@ -283,7 +281,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(642, 15);
+            this.label15.Location = new System.Drawing.Point(380, 15);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(69, 13);
             this.label15.TabIndex = 28;
@@ -370,25 +368,6 @@
             this.txtDatum1.TabIndex = 38;
             this.txtDatum1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // txtId
-            // 
-            this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
-            this.txtId.Location = new System.Drawing.Point(139, 12);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 40;
-            this.txtId.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 12);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 13);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "ID:";
-            this.label7.Click += new System.EventHandler(this.label7_Click_1);
-            // 
             // bntUrediNabavu
             // 
             this.bntUrediNabavu.Location = new System.Drawing.Point(827, 584);
@@ -406,8 +385,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(1185, 659);
             this.Controls.Add(this.bntUrediNabavu);
-            this.Controls.Add(this.txtId);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtDatum1);
             this.Controls.Add(this.txtDatum);
             this.Controls.Add(this.btnEvaluate);
@@ -484,8 +461,6 @@
         private System.Windows.Forms.Button btnEvaluate;
         private System.Windows.Forms.Label txtDatum;
         private System.Windows.Forms.TextBox txtDatum1;
-        private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button bntUrediNabavu;
     }
 }
