@@ -36,6 +36,12 @@ namespace TechGet
         {
             Procuration selected = nabava[cboOdaberiNabavu.SelectedIndex];
             txtIdAzuriranje.Text = selected.Opis_predmeta_nabave;
+
+        }
+
+        private void txtIdAzuriranje_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

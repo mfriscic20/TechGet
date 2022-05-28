@@ -67,6 +67,7 @@
             this.txtIdAzuriranje.Name = "txtIdAzuriranje";
             this.txtIdAzuriranje.Size = new System.Drawing.Size(100, 20);
             this.txtIdAzuriranje.TabIndex = 3;
+            this.txtIdAzuriranje.TextChanged += new System.EventHandler(this.txtIdAzuriranje_TextChanged);
             // 
             // FrmUpdate
             // 

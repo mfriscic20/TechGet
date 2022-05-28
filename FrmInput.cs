@@ -91,7 +91,9 @@ namespace TechGet
            
             
 
-            if (txtBrojProjekta.Text == "")
+            if (txtBrojProjekta.Text == "" || txtPonuda1Odabrano.Text=="" || txtPonuda2Odabrano.Text=="" || txtPonuda1Cijena.Text==""
+                || txtPonuda2Odabrano.Text=="" || txtKlasa.Text=="" || txtUrBroj.Text=="" || txtPonuda1Ponuditelj.Text=="" || txtPonuda2Ponuditelj.Text==""
+                ||txtDodatnaPojasnjenja.Text=="")
             MessageBox.Show("Molim popunite sve podatke");
 
             else
