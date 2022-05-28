@@ -13,10 +13,10 @@ using TechGet.Models;
 
 namespace TechGet
 {
-    public partial class FrmUpdateDelete : Form
+    public partial class FrmChooseOperation : Form
     {
         public static List<Procuration> nabava { get; set; }
-        public FrmUpdateDelete()
+        public FrmChooseOperation()
         {
             InitializeComponent();
         }
@@ -65,7 +65,7 @@ namespace TechGet
         private void btnUrediNabavu_Click(object sender, EventArgs e)
         {
             Procuration odabrana_nabava=dgvAzurirajNabavu.CurrentRow.DataBoundItem as Procuration;
-            FrmAzuriraj frmAzuriraj = new FrmAzuriraj(odabrana_nabava);
+            FrmUpdate frmAzuriraj = new FrmUpdate(odabrana_nabava);
             Hide();
             frmAzuriraj.ShowDialog();
             Close();

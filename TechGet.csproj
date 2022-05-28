@@ -50,11 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAzuriraj.cs">
+    <Compile Include="FrmUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAzuriraj.Designer.cs">
-      <DependentUpon>FrmAzuriraj.cs</DependentUpon>
+    <Compile Include="FrmUpdate.Designer.cs">
+      <DependentUpon>FrmUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmInput.cs">
       <SubType>Form</SubType>
@@ -74,11 +74,11 @@
     <Compile Include="FrmProcurations.Designer.cs">
       <DependentUpon>FrmProcurations.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUpdateDelete.cs">
+    <Compile Include="FrmChooseOperation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUpdateDelete.Designer.cs">
-      <DependentUpon>FrmUpdateDelete.cs</DependentUpon>
+    <Compile Include="FrmChooseOperation.Designer.cs">
+      <DependentUpon>FrmChooseOperation.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\FundingSource.cs" />
@@ -89,8 +89,8 @@
     <Compile Include="Repositories\FundingSourceRepository.cs" />
     <Compile Include="Repositories\PersonRepository.cs" />
     <Compile Include="Repositories\ProcurationRepository.cs" />
-    <EmbeddedResource Include="FrmAzuriraj.resx">
-      <DependentUpon>FrmAzuriraj.cs</DependentUpon>
+    <EmbeddedResource Include="FrmUpdate.resx">
+      <DependentUpon>FrmUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInput.resx">
       <DependentUpon>FrmInput.cs</DependentUpon>
@@ -102,8 +102,8 @@
     <EmbeddedResource Include="FrmProcurations.resx">
       <DependentUpon>FrmProcurations.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUpdateDelete.resx">
-      <DependentUpon>FrmUpdateDelete.cs</DependentUpon>
+    <EmbeddedResource Include="FrmChooseOperation.resx">
+      <DependentUpon>FrmChooseOperation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

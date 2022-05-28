@@ -1,6 +1,6 @@
 ﻿namespace TechGet
 {
-    partial class FrmUpdateDelete
+    partial class FrmChooseOperation
     {
         /// <summary>
         /// Required designer variable.

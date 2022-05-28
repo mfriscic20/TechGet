@@ -1,6 +1,6 @@
 ﻿namespace TechGet
 {
-    partial class FrmAzuriraj
+    partial class FrmUpdate
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtDatum1 = new System.Windows.Forms.TextBox();
-            this.txtDatum = new System.Windows.Forms.Label();
+            this.txtDatum = new System.Windows.Forms.TextBox();
+            this.Labela_datum = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -61,22 +61,22 @@
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtDatum1
-            // 
-            this.txtDatum1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
-            this.txtDatum1.Location = new System.Drawing.Point(138, 59);
-            this.txtDatum1.Name = "txtDatum1";
-            this.txtDatum1.Size = new System.Drawing.Size(100, 20);
-            this.txtDatum1.TabIndex = 68;
-            // 
             // txtDatum
             // 
-            this.txtDatum.AutoSize = true;
-            this.txtDatum.Location = new System.Drawing.Point(13, 62);
+            this.txtDatum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
+            this.txtDatum.Location = new System.Drawing.Point(138, 59);
             this.txtDatum.Name = "txtDatum";
-            this.txtDatum.Size = new System.Drawing.Size(38, 13);
-            this.txtDatum.TabIndex = 67;
-            this.txtDatum.Text = "Datum";
+            this.txtDatum.Size = new System.Drawing.Size(100, 20);
+            this.txtDatum.TabIndex = 68;
+            // 
+            // Labela_datum
+            // 
+            this.Labela_datum.AutoSize = true;
+            this.Labela_datum.Location = new System.Drawing.Point(13, 62);
+            this.Labela_datum.Name = "Labela_datum";
+            this.Labela_datum.Size = new System.Drawing.Size(38, 13);
+            this.Labela_datum.TabIndex = 67;
+            this.Labela_datum.Text = "Datum";
             // 
             // label19
             // 
@@ -335,15 +335,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // FrmAzuriraj
+            // FrmUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(1208, 592);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtDatum1);
             this.Controls.Add(this.txtDatum);
+            this.Controls.Add(this.Labela_datum);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
@@ -372,7 +372,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtKlasa);
             this.Controls.Add(this.label1);
-            this.Name = "FrmAzuriraj";
+            this.Name = "FrmUpdate";
             this.Text = "FrmAzuriraj";
             this.Load += new System.EventHandler(this.FrmAzuriraj_Load);
             this.ResumeLayout(false);
@@ -382,8 +382,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtDatum1;
-        private System.Windows.Forms.Label txtDatum;
+        private System.Windows.Forms.TextBox txtDatum;
+        private System.Windows.Forms.Label Labela_datum;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;

@@ -120,9 +120,18 @@ namespace TechGet.Repositories
 
         }
 
-        public static void UpdateProcuration(Procuration procuration, int ur_broj)
+        public static void UpdateProcuration(Procuration procuration, int ur_broj, int klasa, string datum, string opis_predmeta_nabave, int p1_odabrano,
+            int p2_odabrano, float p1_cijena, float p2_cijena, string p1_ponuditelj, string p2_ponuditelj, string naziv_projekta, string dodatna_pojasnjenja,
+            FundingSource fundings, int br_projekta)
         {
-            string sql = $"UPDATE Nabave SET Ur_broj={ur_broj} WHERE Id='{procuration.Id}'"; //doradi ovaj upit dok skuzis insert
+
+            //objekt_nabava, ur_broj, klasa,datum, opis_predmeta_nabave, br_projekta, p1_odabrano, p2_odabrano, p1_cijena,
+           // p2_cijena,p1_ponuditelj,p2_ponuditelj,naziv_projekta,dodatna_pojasnjenja,fundings
+
+            string sql = $"UPDATE Nabave SET Ur_broj='{ur_broj}',Klasa='{klasa}', Datum='{datum}',Opis_predmeta_nabave" +
+                $"='{opis_predmeta_nabave}', p1_ponuditelj='{p1_ponuditelj}', p2_ponuditelj='{p2_ponuditelj}'," +
+                $"Naziv_projekta='{naziv_projekta}', Dodatna_pojasnjenja='{dodatna_pojasnjenja}', p1_cijena='{p1_cijena}'," +
+                $"p2_odabrano='{p2_odabrano}', p1_odabrano='{p1_odabrano}', p2_cijena='{p2_cijena}', Br_projekta='{br_projekta}', FinanciranjeId='{fundings.Id}' WHERE Id='{procuration.Id}'"; //doradi ovaj upit dok skuzis insert
 
                  DB.SetConfiguration("mfriscic20_DB", "mfriscic20", "'3;Y!xv0?'");
                  DB.OpenConnection();
