@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dgvProcurations = new System.Windows.Forms.DataGridView();
+            this.btnGotoInput = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcurations)).BeginInit();
             this.SuspendLayout();
             // 
@@ -37,14 +38,26 @@
             this.dgvProcurations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProcurations.Location = new System.Drawing.Point(2, 1);
             this.dgvProcurations.Name = "dgvProcurations";
-            this.dgvProcurations.Size = new System.Drawing.Size(1829, 677);
+            this.dgvProcurations.Size = new System.Drawing.Size(1823, 317);
             this.dgvProcurations.TabIndex = 0;
+            this.dgvProcurations.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProcurations_CellContentClick);
+            // 
+            // btnGotoInput
+            // 
+            this.btnGotoInput.Location = new System.Drawing.Point(612, 453);
+            this.btnGotoInput.Name = "btnGotoInput";
+            this.btnGotoInput.Size = new System.Drawing.Size(190, 87);
+            this.btnGotoInput.TabIndex = 1;
+            this.btnGotoInput.Text = "VRATI SE NA UNOS NABAVA";
+            this.btnGotoInput.UseVisualStyleBackColor = true;
+            this.btnGotoInput.Click += new System.EventHandler(this.btnGotoInput_Click);
             // 
             // FrmProcurations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1824, 674);
+            this.Controls.Add(this.btnGotoInput);
             this.Controls.Add(this.dgvProcurations);
             this.Name = "FrmProcurations";
             this.Text = "Prikaz nabava";
@@ -57,5 +70,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvProcurations;
+        private System.Windows.Forms.Button btnGotoInput;
     }
 }

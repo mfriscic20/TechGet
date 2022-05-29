@@ -154,7 +154,7 @@ namespace TechGet
                 nova_nabava.Datum = datum;
 
                 nova_nabava.dodatna_pojasnjenja = dodatna_pojasnjenja;
-                nova_nabava.FinanciranjeId = FundingSourceRepository.GetFundingSource(cboFundingSources.SelectedIndex);
+                nova_nabava.FinanciranjeId = FundingSourceRepository.GetFundingSource(cboFundingSources.SelectedIndex+1);
                 nova_nabava.ZaposlenikId = PersonRepository.GetPerson(FrmLogin.LoggedEmployee.Id);
 
 

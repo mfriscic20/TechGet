@@ -76,7 +76,19 @@ namespace TechGet
         {
             Procuration odabrana_nabava = dgvAzurirajNabavu.CurrentRow.DataBoundItem as Procuration;
             ProcurationRepository.DeleteProcuration(odabrana_nabava);
+            MessageBox.Show("Uspješno ste obrisali nabavu!");
 
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           var za_search= ProcurationRepository.SearchProcurations(textBox1.Text);
+           dgvAzurirajNabavu.DataSource= za_search;
         }
     }
 }

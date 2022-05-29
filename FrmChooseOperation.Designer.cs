@@ -39,6 +39,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnUrediNabavu = new System.Windows.Forms.Button();
             this.btnObrisiNabavu = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnPretrazi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAzurirajNabavu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -142,11 +145,41 @@
             this.btnObrisiNabavu.UseVisualStyleBackColor = true;
             this.btnObrisiNabavu.Click += new System.EventHandler(this.btnObrisiNabavu_Click);
             // 
-            // FrmUpdateDelete
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(421, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(209, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "PRETRAGA PREMA NAZIVU PROJEKTA";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(653, 11);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(117, 20);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // btnPretrazi
+            // 
+            this.btnPretrazi.Location = new System.Drawing.Point(845, 421);
+            this.btnPretrazi.Name = "btnPretrazi";
+            this.btnPretrazi.Size = new System.Drawing.Size(167, 63);
+            this.btnPretrazi.TabIndex = 13;
+            this.btnPretrazi.Text = "PRETRAŽI PREMA NAZIVU PROJEKTA";
+            this.btnPretrazi.UseVisualStyleBackColor = true;
+            this.btnPretrazi.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // FrmChooseOperation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1416, 519);
+            this.Controls.Add(this.btnPretrazi);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnObrisiNabavu);
             this.Controls.Add(this.btnUrediNabavu);
             this.Controls.Add(this.label4);
@@ -158,7 +191,7 @@
             this.Controls.Add(this.dgvAzurirajNabavu);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboOdaberiNabavu);
-            this.Name = "FrmUpdateDelete";
+            this.Name = "FrmChooseOperation";
             this.Text = "FrmUpdate";
             this.Load += new System.EventHandler(this.FrmUpdate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAzurirajNabavu)).EndInit();
@@ -180,5 +213,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnUrediNabavu;
         private System.Windows.Forms.Button btnObrisiNabavu;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnPretrazi;
     }
 }

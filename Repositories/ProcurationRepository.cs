@@ -148,6 +148,26 @@ namespace TechGet.Repositories
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
+
+        public static List<Procuration> SearchProcurations(string naziv_projekta)
+        {
+            var procurations = new List<Procuration>();
+
+            string sql = $"SELECT * FROM Nabave WHERE Naziv_projekta='{naziv_projekta}'";
+            DB.SetConfiguration("mfriscic20_DB", "mfriscic20", "'3;Y!xv0?'");
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Procuration procuration = CreateObject(reader);
+                procurations.Add(procuration);
+            }
+
+            reader.Close();
+            DB.CloseConnection();
+
+            return procurations;
+        }
     }
 }
 

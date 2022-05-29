@@ -92,6 +92,7 @@ namespace TechGet
                 $"p2_odabrano={p2_odabrano}, p1_odabrano={p1_odabrano}, p2_cijena='{p2_cijena}', Br_projekta={br_projekta}, FinanciranjeId={fundings.Id} WHERE Id='{procuration.Id}'";
            */
             FrmChooseOperation frmUpdateDelete = new FrmChooseOperation();
+            MessageBox.Show("Uspješno ste ažurirali nabavu!");
             frmUpdateDelete.ShowDialog();
 
 

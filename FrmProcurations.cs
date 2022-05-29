@@ -48,5 +48,18 @@ namespace TechGet
 
 
         }
+
+        private void dgvProcurations_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnGotoInput_Click(object sender, EventArgs e)
+        {
+            FrmInput frmUnesi = new FrmInput();
+            Hide();
+            frmUnesi.ShowDialog();
+            Close();
+        }
     }
 }
