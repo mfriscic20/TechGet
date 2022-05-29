@@ -15,7 +15,7 @@ namespace TechGet
 {
     public partial class FrmChooseOperation : Form
     {
-        public static List<Procuration> nabava { get; set; }
+        public static List<Procuration> procuration { get; set; }
         public FrmChooseOperation()
         {
             InitializeComponent();
@@ -25,16 +25,16 @@ namespace TechGet
         {
 
             
-        nabava=EmployeeRepository.GetProcurations();
-            cboOdaberiNabavu.DataSource = nabava;
-            dgvAzurirajNabavu.DataSource = nabava;
+        procuration=EmployeeRepository.GetProcurations();
+            cboOdaberiNabavu.DataSource = procuration;
+            dgvAzurirajNabavu.DataSource = procuration;
 
             
         }
 
         private void cboOdaberiNabavu_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Procuration selected = nabava[cboOdaberiNabavu.SelectedIndex];
+            Procuration selected = procuration[cboOdaberiNabavu.SelectedIndex];
             txtOpisPredmetaAzuriranje.Text = selected.Opis_predmeta_nabave;
 
         }
@@ -42,7 +42,7 @@ namespace TechGet
         private void txtIdAzuriranje_TextChanged(object sender, EventArgs e)
         {
 
-            Procuration selected = nabava[cboOdaberiNabavu.SelectedIndex];
+            Procuration selected = procuration[cboOdaberiNabavu.SelectedIndex];
             txtNazivProjektaAzuriranje.Text = selected.naziv_projekta;
 
 
@@ -51,7 +51,7 @@ namespace TechGet
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-            Procuration selected = nabava[cboOdaberiNabavu.SelectedIndex];
+            Procuration selected = procuration[cboOdaberiNabavu.SelectedIndex];
             txtNazivProjektaAzuriranje.Text = selected.naziv_projekta;
 
         }
@@ -86,6 +86,13 @@ namespace TechGet
            btnPretrazi.BackColor = Color.Blue;
            var za_search= EmployeeRepository.SearchProcurations(textBox1.Text);
            dgvAzurirajNabavu.DataSource= za_search;
+        }
+
+       
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
