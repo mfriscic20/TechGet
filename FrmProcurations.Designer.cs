@@ -44,18 +44,21 @@
             // 
             // btnGotoInput
             // 
+            this.btnGotoInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnGotoInput.ForeColor = System.Drawing.Color.White;
             this.btnGotoInput.Location = new System.Drawing.Point(612, 453);
             this.btnGotoInput.Name = "btnGotoInput";
             this.btnGotoInput.Size = new System.Drawing.Size(190, 87);
             this.btnGotoInput.TabIndex = 1;
             this.btnGotoInput.Text = "VRATI SE NA UNOS NABAVA";
-            this.btnGotoInput.UseVisualStyleBackColor = true;
+            this.btnGotoInput.UseVisualStyleBackColor = false;
             this.btnGotoInput.Click += new System.EventHandler(this.btnGotoInput_Click);
             // 
             // FrmProcurations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(1824, 674);
             this.Controls.Add(this.btnGotoInput);
             this.Controls.Add(this.dgvProcurations);

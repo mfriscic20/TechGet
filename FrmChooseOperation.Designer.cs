@@ -33,9 +33,7 @@
             this.dgvAzurirajNabavu = new System.Windows.Forms.DataGridView();
             this.txtOpisPredmetaAzuriranje = new System.Windows.Forms.TextBox();
             this.txtNazivProjektaAzuriranje = new System.Windows.Forms.TextBox();
-            this.txtDodatnaPojasnjenjaAzuriranje = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnUrediNabavu = new System.Windows.Forms.Button();
             this.btnObrisiNabavu = new System.Windows.Forms.Button();
@@ -47,6 +45,7 @@
             // 
             // cboOdaberiNabavu
             // 
+            this.cboOdaberiNabavu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
             this.cboOdaberiNabavu.FormattingEnabled = true;
             this.cboOdaberiNabavu.Location = new System.Drawing.Point(134, 12);
             this.cboOdaberiNabavu.Name = "cboOdaberiNabavu";
@@ -65,38 +64,32 @@
             // 
             // dgvAzurirajNabavu
             // 
+            this.dgvAzurirajNabavu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
             this.dgvAzurirajNabavu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAzurirajNabavu.Location = new System.Drawing.Point(15, 66);
+            this.dgvAzurirajNabavu.Location = new System.Drawing.Point(1, 66);
             this.dgvAzurirajNabavu.Name = "dgvAzurirajNabavu";
-            this.dgvAzurirajNabavu.Size = new System.Drawing.Size(1400, 106);
+            this.dgvAzurirajNabavu.Size = new System.Drawing.Size(1414, 106);
             this.dgvAzurirajNabavu.TabIndex = 2;
             // 
             // txtOpisPredmetaAzuriranje
             // 
+            this.txtOpisPredmetaAzuriranje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
             this.txtOpisPredmetaAzuriranje.Location = new System.Drawing.Point(15, 278);
             this.txtOpisPredmetaAzuriranje.Multiline = true;
             this.txtOpisPredmetaAzuriranje.Name = "txtOpisPredmetaAzuriranje";
-            this.txtOpisPredmetaAzuriranje.Size = new System.Drawing.Size(159, 56);
+            this.txtOpisPredmetaAzuriranje.Size = new System.Drawing.Size(248, 206);
             this.txtOpisPredmetaAzuriranje.TabIndex = 3;
             this.txtOpisPredmetaAzuriranje.TextChanged += new System.EventHandler(this.txtIdAzuriranje_TextChanged);
             // 
             // txtNazivProjektaAzuriranje
             // 
+            this.txtNazivProjektaAzuriranje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
             this.txtNazivProjektaAzuriranje.Location = new System.Drawing.Point(290, 278);
             this.txtNazivProjektaAzuriranje.Multiline = true;
             this.txtNazivProjektaAzuriranje.Name = "txtNazivProjektaAzuriranje";
-            this.txtNazivProjektaAzuriranje.Size = new System.Drawing.Size(167, 115);
+            this.txtNazivProjektaAzuriranje.Size = new System.Drawing.Size(167, 86);
             this.txtNazivProjektaAzuriranje.TabIndex = 4;
             this.txtNazivProjektaAzuriranje.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txtDodatnaPojasnjenjaAzuriranje
-            // 
-            this.txtDodatnaPojasnjenjaAzuriranje.Location = new System.Drawing.Point(563, 278);
-            this.txtDodatnaPojasnjenjaAzuriranje.Multiline = true;
-            this.txtDodatnaPojasnjenjaAzuriranje.Name = "txtDodatnaPojasnjenjaAzuriranje";
-            this.txtDodatnaPojasnjenjaAzuriranje.Size = new System.Drawing.Size(152, 115);
-            this.txtDodatnaPojasnjenjaAzuriranje.TabIndex = 5;
-            this.txtDodatnaPojasnjenjaAzuriranje.TextChanged += new System.EventHandler(this.txtDodatnaPojasnjenjaAzuriranje_TextChanged);
             // 
             // label2
             // 
@@ -106,15 +99,6 @@
             this.label2.Size = new System.Drawing.Size(114, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Opis predmeta nabave";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(560, 221);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Dodatna pojašnjenja";
             // 
             // label4
             // 
@@ -127,22 +111,26 @@
             // 
             // btnUrediNabavu
             // 
+            this.btnUrediNabavu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnUrediNabavu.ForeColor = System.Drawing.Color.White;
             this.btnUrediNabavu.Location = new System.Drawing.Point(845, 278);
             this.btnUrediNabavu.Name = "btnUrediNabavu";
             this.btnUrediNabavu.Size = new System.Drawing.Size(167, 67);
             this.btnUrediNabavu.TabIndex = 9;
             this.btnUrediNabavu.Text = "UREDI NABAVU";
-            this.btnUrediNabavu.UseVisualStyleBackColor = true;
+            this.btnUrediNabavu.UseVisualStyleBackColor = false;
             this.btnUrediNabavu.Click += new System.EventHandler(this.btnUrediNabavu_Click);
             // 
             // btnObrisiNabavu
             // 
+            this.btnObrisiNabavu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnObrisiNabavu.ForeColor = System.Drawing.Color.White;
             this.btnObrisiNabavu.Location = new System.Drawing.Point(1098, 278);
             this.btnObrisiNabavu.Name = "btnObrisiNabavu";
             this.btnObrisiNabavu.Size = new System.Drawing.Size(167, 67);
             this.btnObrisiNabavu.TabIndex = 10;
             this.btnObrisiNabavu.Text = "IZBRIŠI NABAVU";
-            this.btnObrisiNabavu.UseVisualStyleBackColor = true;
+            this.btnObrisiNabavu.UseVisualStyleBackColor = false;
             this.btnObrisiNabavu.Click += new System.EventHandler(this.btnObrisiNabavu_Click);
             // 
             // label5
@@ -156,6 +144,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
             this.textBox1.Location = new System.Drawing.Point(653, 11);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(117, 20);
@@ -164,18 +153,21 @@
             // 
             // btnPretrazi
             // 
-            this.btnPretrazi.Location = new System.Drawing.Point(845, 421);
+            this.btnPretrazi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnPretrazi.ForeColor = System.Drawing.Color.White;
+            this.btnPretrazi.Location = new System.Drawing.Point(845, 415);
             this.btnPretrazi.Name = "btnPretrazi";
-            this.btnPretrazi.Size = new System.Drawing.Size(167, 63);
+            this.btnPretrazi.Size = new System.Drawing.Size(167, 69);
             this.btnPretrazi.TabIndex = 13;
             this.btnPretrazi.Text = "PRETRAŽI PREMA NAZIVU PROJEKTA";
-            this.btnPretrazi.UseVisualStyleBackColor = true;
+            this.btnPretrazi.UseVisualStyleBackColor = false;
             this.btnPretrazi.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmChooseOperation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(1416, 519);
             this.Controls.Add(this.btnPretrazi);
             this.Controls.Add(this.textBox1);
@@ -183,9 +175,7 @@
             this.Controls.Add(this.btnObrisiNabavu);
             this.Controls.Add(this.btnUrediNabavu);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtDodatnaPojasnjenjaAzuriranje);
             this.Controls.Add(this.txtNazivProjektaAzuriranje);
             this.Controls.Add(this.txtOpisPredmetaAzuriranje);
             this.Controls.Add(this.dgvAzurirajNabavu);
@@ -207,9 +197,7 @@
         private System.Windows.Forms.DataGridView dgvAzurirajNabavu;
         private System.Windows.Forms.TextBox txtOpisPredmetaAzuriranje;
         private System.Windows.Forms.TextBox txtNazivProjektaAzuriranje;
-        private System.Windows.Forms.TextBox txtDodatnaPojasnjenjaAzuriranje;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnUrediNabavu;
         private System.Windows.Forms.Button btnObrisiNabavu;

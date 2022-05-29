@@ -15,7 +15,7 @@ namespace TechGet
     public partial class FrmLogin : Form
     {
 
-        public static Person LoggedEmployee { get; set; }
+        public static Employee LoggedEmployee { get; set; }
         public FrmLogin()
         {
             InitializeComponent();

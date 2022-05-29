@@ -327,12 +327,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(480, 479);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(239, 78);
             this.button1.TabIndex = 69;
             this.button1.Text = "AŽURIRANJE NABAVE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmUpdate

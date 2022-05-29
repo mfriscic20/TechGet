@@ -80,15 +80,14 @@
     <Compile Include="FrmChooseOperation.Designer.cs">
       <DependentUpon>FrmChooseOperation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\FundingSource.cs" />
-    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Procuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\FundingSourceRepository.cs" />
     <Compile Include="Repositories\PersonRepository.cs" />
-    <Compile Include="Repositories\ProcurationRepository.cs" />
+    <Compile Include="Repositories\EmployeeRepository.cs" />
     <EmbeddedResource Include="FrmUpdate.resx">
       <DependentUpon>FrmUpdate.cs</DependentUpon>
     </EmbeddedResource>

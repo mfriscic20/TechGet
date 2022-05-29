@@ -17,7 +17,7 @@ namespace TechGet.Models
 
         public string Datum { get; set; }
 
-        public Person ZaposlenikId { get; set; }
+        public Employee ZaposlenikId { get; set; }
 
         public int klasa { get; set; }
 

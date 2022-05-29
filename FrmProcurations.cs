@@ -25,7 +25,7 @@ namespace TechGet
 
         private void ShowProcurations()
         {
-            var procurations = ProcurationRepository.GetProcurations();
+            var procurations = EmployeeRepository.GetProcurations();
             dgvProcurations.DataSource = procurations;
 
             dgvProcurations.Columns["Id"].DisplayIndex = 0;

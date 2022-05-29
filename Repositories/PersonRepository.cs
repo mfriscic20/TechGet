@@ -12,26 +12,26 @@ namespace TechGet.Repositories
     public class PersonRepository
     {
 
-        public static Person GetPerson(string username)
+        public static Employee GetPerson(string username)
         {
             string sql=$"SELECT * FROM Zaposlenici WHERE Korisnicko_ime='{username}'";
             return FetchPerson(sql);
             
         }
 
-        public static Person GetPerson (int id)
+        public static Employee GetPerson (int id)
         {
             string sql = $"SELECT * FROM Zaposlenici WHERE Id={id}";
             return FetchPerson(sql);
         }
 
-        private static Person FetchPerson(string sql)
+        private static Employee FetchPerson(string sql)
         {
             DB.SetConfiguration("mfriscic20_DB", "mfriscic20", "'3;Y!xv0?'");
             DB.OpenConnection();
             
             var reader=DB.GetDataReader(sql);
-            Person person = null;
+            Employee person = null;
 
             if (reader.HasRows==true)
             {
@@ -44,7 +44,7 @@ namespace TechGet.Repositories
             return person;
         }
 
-        private static Person CreateObject(SqlDataReader reader)
+        private static Employee CreateObject(SqlDataReader reader)
         {
             int id=int.Parse(reader["Id"].ToString());
             string firstName = reader["Ime"].ToString();
@@ -53,7 +53,7 @@ namespace TechGet.Repositories
             string password=reader["Lozinka"].ToString();
             string ulogeId = reader["UlogeId"].ToString();
 
-            var person = new Person
+            var person = new Employee
             {
                 Id = id,
                 FirstName = firstName,

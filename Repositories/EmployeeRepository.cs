@@ -9,7 +9,7 @@ using TechGet.Models;
 
 namespace TechGet.Repositories
 {
-    public class ProcurationRepository
+    public class EmployeeRepository
     {
         public static Procuration GetProcuration(int id)
         {
@@ -55,7 +55,7 @@ namespace TechGet.Repositories
             
             int Realizirano = int.Parse(reader["Realizirano"].ToString());
             string datum = reader["Datum"].ToString();
-            Person ZaposlenikId = PersonRepository.GetPerson(int.Parse(reader["ZaposlenikId"].ToString()));
+            Employee ZaposlenikId = PersonRepository.GetPerson(int.Parse(reader["ZaposlenikId"].ToString()));
             FundingSource FinanciranjeId = FundingSourceRepository.GetFundingSource(int.Parse(reader["FinanciranjeId"].ToString()));
             int Klasa = int.Parse(reader["klasa"].ToString());
             int Ur_broj = int.Parse(reader["ur_broj"].ToString());

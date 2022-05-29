@@ -165,7 +165,7 @@ namespace TechGet
                 //svojstva preimenuj da pocnu velikim slovom
 
 
-                ProcurationRepository.InsertProcuration(nova_nabava);
+                EmployeeRepository.InsertProcuration(nova_nabava);
 
                 MessageBox.Show("Uspješno ste unjeli zahtjev za nabavu");
             }

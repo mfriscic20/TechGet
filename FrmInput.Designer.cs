@@ -330,23 +330,26 @@
             // 
             // btnPodnesiZahtjev
             // 
+            this.btnPodnesiZahtjev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnPodnesiZahtjev.ForeColor = System.Drawing.Color.White;
             this.btnPodnesiZahtjev.Location = new System.Drawing.Point(271, 584);
             this.btnPodnesiZahtjev.Name = "btnPodnesiZahtjev";
             this.btnPodnesiZahtjev.Size = new System.Drawing.Size(179, 68);
             this.btnPodnesiZahtjev.TabIndex = 35;
             this.btnPodnesiZahtjev.Text = "PODNESI ZAHTJEV";
-            this.btnPodnesiZahtjev.UseVisualStyleBackColor = true;
+            this.btnPodnesiZahtjev.UseVisualStyleBackColor = false;
             this.btnPodnesiZahtjev.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnEvaluate
             // 
-            this.btnEvaluate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEvaluate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.btnEvaluate.ForeColor = System.Drawing.Color.White;
             this.btnEvaluate.Location = new System.Drawing.Point(560, 584);
             this.btnEvaluate.Name = "btnEvaluate";
             this.btnEvaluate.Size = new System.Drawing.Size(160, 68);
             this.btnEvaluate.TabIndex = 36;
             this.btnEvaluate.Text = "PRIKAŽI NABAVE";
-            this.btnEvaluate.UseVisualStyleBackColor = true;
+            this.btnEvaluate.UseVisualStyleBackColor = false;
             this.btnEvaluate.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtDatum
@@ -370,12 +373,14 @@
             // 
             // bntUrediNabavu
             // 
+            this.bntUrediNabavu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(83)))), ((int)(((byte)(117)))));
+            this.bntUrediNabavu.ForeColor = System.Drawing.Color.White;
             this.bntUrediNabavu.Location = new System.Drawing.Point(827, 584);
             this.bntUrediNabavu.Name = "bntUrediNabavu";
             this.bntUrediNabavu.Size = new System.Drawing.Size(160, 68);
             this.bntUrediNabavu.TabIndex = 41;
             this.bntUrediNabavu.Text = "UREDI NABAVU";
-            this.bntUrediNabavu.UseVisualStyleBackColor = true;
+            this.bntUrediNabavu.UseVisualStyleBackColor = false;
             this.bntUrediNabavu.Click += new System.EventHandler(this.bntUrediNabavu_Click);
             // 
             // FrmInput
