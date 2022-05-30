@@ -81,7 +81,7 @@ namespace TechGet
             int p2_odabrano, float p1_cijena, float p2_cijena, string p1_ponuditelj, string p2_ponuditelj, string naziv_projekta, string dodatna_pojasnjenja,
             FundingSource fundings, int br_projekta)
             */
-            EmployeeRepository.UpdateProcuration(objekt_nabava, ur_broj, klasa,datum, opis_predmeta_nabave, p1_odabrano, p2_odabrano, p1_cijena, p2_cijena,
+            ProcurationRepository.UpdateProcuration(objekt_nabava, ur_broj, klasa,datum, opis_predmeta_nabave, p1_odabrano, p2_odabrano, p1_cijena, p2_cijena,
                 p1_ponuditelj,p2_ponuditelj,naziv_projekta,dodatna_pojasnjenja,fundings,br_projekta); //proslijedi sve vrijednosti
             
             Close();

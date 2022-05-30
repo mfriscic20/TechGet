@@ -26,7 +26,7 @@ namespace TechGet
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
-            LoggedEmployee = PersonRepository.GetPerson(txtUsername.Text);
+            LoggedEmployee = EmployeeRepository.GetEmployee(txtUsername.Text);
 
             if (txtUsername.Text == "")
             {

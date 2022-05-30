@@ -25,7 +25,7 @@ namespace TechGet
         {
 
             
-        procuration=EmployeeRepository.GetProcurations();
+        procuration=ProcurationRepository.GetProcurations();
             cboOdaberiNabavu.DataSource = procuration;
             dgvAzurirajNabavu.DataSource = procuration;
 
@@ -71,8 +71,12 @@ namespace TechGet
         private void btnObrisiNabavu_Click(object sender, EventArgs e)
         {
             Procuration odabrana_nabava = dgvAzurirajNabavu.CurrentRow.DataBoundItem as Procuration;
-            EmployeeRepository.DeleteProcuration(odabrana_nabava);
+            ProcurationRepository.DeleteProcuration(odabrana_nabava);
             MessageBox.Show("Uspješno ste obrisali nabavu!");
+            FrmProcurations frmNabave = new FrmProcurations();
+            Hide();
+            frmNabave.ShowDialog();
+            Close();
 
         }
 
@@ -84,7 +88,7 @@ namespace TechGet
         private void button1_Click(object sender, EventArgs e)
         {
            btnPretrazi.BackColor = Color.Blue;
-           var za_search= EmployeeRepository.SearchProcurations(textBox1.Text);
+           var za_search= ProcurationRepository.SearchProcurations(textBox1.Text);
            dgvAzurirajNabavu.DataSource= za_search;
         }
 

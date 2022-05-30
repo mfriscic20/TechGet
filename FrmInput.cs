@@ -155,7 +155,7 @@ namespace TechGet
 
                 nova_nabava.dodatna_pojasnjenja = dodatna_pojasnjenja;
                 nova_nabava.FinanciranjeId = FundingSourceRepository.GetFundingSource(cboFundingSources.SelectedIndex+1);
-                nova_nabava.ZaposlenikId = PersonRepository.GetPerson(FrmLogin.LoggedEmployee.Id);
+                nova_nabava.ZaposlenikId = EmployeeRepository.GetEmployee(FrmLogin.LoggedEmployee.Id);
 
 
 
@@ -165,7 +165,7 @@ namespace TechGet
                 //svojstva preimenuj da pocnu velikim slovom
 
 
-                EmployeeRepository.InsertProcuration(nova_nabava);
+                ProcurationRepository.InsertProcuration(nova_nabava);
 
                 MessageBox.Show("Uspješno ste unjeli zahtjev za nabavu");
             }
