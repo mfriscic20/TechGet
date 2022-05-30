@@ -88,7 +88,7 @@ namespace TechGet
         private void button1_Click(object sender, EventArgs e)
         {
            btnPretrazi.BackColor = Color.Blue;
-           var za_search= ProcurationRepository.SearchProcurations(textBox1.Text);
+           var za_search= ProcurationRepository.SearchProcurations(txtSearch.Text);
            dgvAzurirajNabavu.DataSource= za_search;
         }
 

@@ -38,7 +38,7 @@
             this.btnUrediNabavu = new System.Windows.Forms.Button();
             this.btnObrisiNabavu = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnPretrazi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAzurirajNabavu)).BeginInit();
             this.SuspendLayout();
@@ -142,14 +142,14 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "PRETRAGA PREMA NAZIVU PROJEKTA";
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
-            this.textBox1.Location = new System.Drawing.Point(653, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(117, 20);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
+            this.txtSearch.Location = new System.Drawing.Point(653, 11);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(117, 20);
+            this.txtSearch.TabIndex = 12;
+            this.txtSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // btnPretrazi
             // 
@@ -170,7 +170,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(1416, 519);
             this.Controls.Add(this.btnPretrazi);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnObrisiNabavu);
             this.Controls.Add(this.btnUrediNabavu);
@@ -202,7 +202,7 @@
         private System.Windows.Forms.Button btnUrediNabavu;
         private System.Windows.Forms.Button btnObrisiNabavu;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnPretrazi;
     }
 }
